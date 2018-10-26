@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using System.Web;
 using System.Web.Mvc;
 
@@ -8,8 +9,11 @@ namespace Assignment2.Controllers
 {
     public class HomeController : Controller
     {
+
         public ActionResult Index()
         {
+            Thread.Sleep(200);
+
             return View();
         }
 
